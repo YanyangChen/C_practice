@@ -1,0 +1,1 @@
+gcc farh.c -o farhtest
