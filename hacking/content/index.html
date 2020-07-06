@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<HTML>
+
+<HEAD>
+<TITLE>Hacking in C</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<h1>Hacking in C, NWI-IPC025, Spring 2017</h1>
+
+This course is taught by <a
+  href="http://www.cs.ru.nl/~erikpoll/">Erik Poll</a> and <a
+  href="http://cryptojedi.org/peter/index.shtml">Peter
+  Schwabe</a>.
+The course used to be called Software &amp; Web Security 1.
+More info in the <a
+  href="http://www.studiegids.science.ru.nl/2016/science/prospectus/inf_ba/course/40493/">studiegids</a>.
+
+<p>
+
+The course gives an introduction to C programming (incl. the use
+of pointers and dynamically allocated data), the underlying memory
+representation on the stack and the heap, and ways to abuse all
+this (with buffer overflows, integer overflows, and format 
+strings attacks).
+The course also teaches some basic command lines skills in
+Linux/UNIX, incl. shell scripts and Makefiles.
+
+
+<p>
+
+<a href="http://xkcd.com/138/"><img width="200" align="right" src="xkcd_pointers.png" alt="xkcd cartoon 'tags'"></a>
+<b>Hoorcollege</b>: maandags 13:45-15:30 in HG00.307
+
+<br><b>Werkcollege</b>: woensdags 10:45-12:30 in HG00.137 en HG00.625 	
+
+<br> <b>Vereiste voorkennis</b>: Imperatief programmeren 1 &amp; 2 (NWI-IPC014, NWI-IPC015 )  en Processoren (NWI-IPC006)
+
+<p>
+
+
+For this course there are <b>obligatory</b> weekly programming or
+hacking exercises, which have to be done in pairs.  At most one
+of these exercises may have been marked as nsi (niet serieus
+ingeleverd) in order for you to take the exam. Exercises have to
+be handed in via Blackboard.
+
+<p>
+
+<h2>Schedule &amp; course material</h2>
+
+Links to slides and assignments will be added as the course
+progresses.
+
+<p>
+
+<TABLE BORDER>
+<tr><th width = "20%"></th>
+    <th width = "80%"></th>
+</tr>
+<tr><td>Jan 30, college 1</td>
+  <td> <a href="slides/hic0.pdf">Intro [SLIDES]</a> and
+  <a href="slides/hic1.pdf">C-data types and their representation [SLIDES]</a>
+    <br>
+    <a href="http://www.cs.ru.nl/~erikpoll/hic/code/lecture1">Code examples demo-ed in lecture 1</a>
+  </td>
+</tr>
+
+
+<tr><td>Feb 1, practicum 1</td>
+  <td> 
+    The Linux command line, gcc, and make.
+    <br>
+<a href="./bashcheatsheet.pdf">[linux-cheat-sheet]</a> 
+<a
+  href="https://github.com/obfusk/bash-cheatsheet/blob/master/bash-cheatsheet.pdf">[alternative cheat sheet by Felix Stegerman]</a> 
+<br>
+<a href="./exercises/assignment1.pdf">Assignment 1</a>, Deadline: February 8, 23:59.
+<br>
+<a href="./exercises/Makefile">Makefile</a> 
+<a href="./exercises/main.c">main.c</a> 
+<a href="./exercises/hello.c">hello.c</a> 
+<a href="./exercises/addvector.c">addvector.c</a> 
+<a href="./exercises/addvector.h">addvector.h</a> 
+</td></tr>
+
+
+<tr><td>Feb 6, college 2</td>
+  <td> <a href="slides/hic2a.pdf">Alignment, arrays and pointers [SLIDES]</a><br>
+   <a href="http://www.cs.ru.nl/~erikpoll/hic/code/lecture2">Code examples demo-ed in lecture 2</a>. Compile <tt>where_is_data_allocated.c</tt>
+    with or without the option <tt> -O2</tt> to get gcc to
+    re-align data differently.
+  </td>
+  Read Section 9.1 of your 'Program Solving with C++' book (used
+  in the
+  Imperatief Programmeren course) for
+  another explanation of pointers.</td>
+</tr>
+
+
+<tr><td>Feb 8, practicum 3</td>
+  <td> Memory layout and pointer arithmetic.<br>
+    <a href="./exercises/assignment2.pdf">Assignment 2</a>, Deadline: February 15, 23:59.
+  <td> 
+  </td>
+</tr>
+
+<tr><td>Feb 13, college 3 </td>
+  <td> <a href="slides/hic2b.pdf">Pointers (continued)</a> and
+       <a href="slides/hic3_stack.pdf">memory management: the stack</a>
+    <br>
+    <a href="http://www.cs.ru.nl/~erikpoll/hic/code/lecture3">Code samples demo-ed in the lecture</a>
+  <br>
+  More info on the stack overflow in Toyotas: <a href="http://embeddedgurus.com/state-space/2014/02/are-we-shooting-ourselves-in-the-foot-with-stack-overflow/">here</a> (not exam material!)
+    <br>
+    A bit childish, but great for revision: <a
+      href="https://www.youtube.com/watch?v=6pmWojisM_E">Binky
+      pointer fun movie</a> by Nick Parlante 
+  </td>
+</tr>
+
+<tr>
+  <td>Feb 15, practicum 4</td>
+  <td>Playing around on the stack and the heap.<br>
+    <a href="./exercises/assignment3.pdf">Assignment 3</a>, Deadline (excl. part 2): Feb 22, 23:59. <br> NB question 2 of assignment 3 is about material that will only be presented in the lecture of Feb 20, so you can skip that for now, and hand that in as part of assignment 4.
+  <td>
+  </td>
+</tr>
+
+<tr><td>Feb 20, college 4</td>
+  <td> <a href="slides/hic4.pdf">The heap, and more stack and heap issues
+      [SLIDES]</a>:
+    overflow, memory leaks, and problems with malloc &amp; free
+    <br>
+    <a href="http://www.cs.ru.nl/~erikpoll/hic/code/lecture4">Code samples demo-ed in the lecture</a>
+    <br>
+    The <a href="https://xkcd.com/1354/">XKCD cartoon explaining Heartbleed</a>
+</td>
+</tr>
+
+
+<tr><td>Feb 22, practicum 5</td>
+  <td> 
+	Memory leaks and attacks. Introduction to gdb.<br>
+	<a href="./exercises/assignment4.pdf">Assignment 4</a>, Deadline: March 8, 23:59.
+      <a href="./exercises/pwd-normal">pwd-normal</a>, <a href="./exercises/pwd-hard">pwd-hard</a><br>
+  You might find this <a href="http://users.ece.utexas.edu/~adnan/gdb-refcard.pdf">GDB Quick Reference</a> helpful.
+  </td>
+
+<tr><td>Feb 27</td>
+    <td> geen college vanwege carnaval </td>
+</tr>
+
+<tr><td>March 1, practicum 5  </td> <td>
+    geen nieuwe opdracht ivm carnaval
+</td>
+</tr>
+
+<tr><td>March 6, college 5 </td>
+  <td><a href="slides/hic5.pdf">Format string attacks and buffer overflows [SLIDES]</a><br>
+    Read the 
+    <a href="http://www.cs.vu.nl/~herbertb/misc/exploits101.pdf">tutorial on buffer overflows</a> by Herbert Bos
+    and
+    <a
+      href="http://www.cis.syr.edu/~wedu/Teaching/cis643/LectureNotes_New/Format_String.pdf">lecture notes on format strings</a> by Wenliang Du.
+    <p>
+    A bufferflow overflow attack is similar to 
+    <a href="https://www.youtube.com/watch?v=vVZm7I1CTBs">phreaking attack on the phone system (video)</a>:
+    In a buffer overflow attack, malicious input tricks the CPU into
+    doing something;
+    in a phone phreaking attack, malicious input - by whistling! -
+    tricks the phone system into doing something, namely dialing numbers for free.
+    </td>
+</tr>
+
+<tr><td>March 8, practicum 6</td>
+      <td> 
+	<a href="./exercises/assignment5.pdf">Assignment 5</a>, Deadline: <b>March 19</b>, 23:59.<br>
+	If the server hackme.cs.ru.nl should not be reachable, please email <a href="mailto:radboud@polvanaubel.com">Pol van Aubel &lt;radboud@polvanaubel.com&gt;</a>
+	Some additional tips for the final challenge to hack the
+	server
+	<ul>
+	<li> When using format strings to analyse the
+	stack layout, using strings with lots of <tt>%p</tt>'s is the most
+	convenient, as <tt>%p</tt> will print stack data as (in
+	this case 64 bit) pointer values.
+	</ul>
+  </td>
+</tr>
+
+<tr><td>March 13, college 6 </td>
+  <td> Buffer overflows:
+    <a href="slides/hic6.pdf">More attacks and some defences
+      (Canaries, non-executable stack, ASLR)</a>
+     </td>
+</tr>
+
+<tr><td>March 15, practicum 7</td>
+   <td>
+	More work on assignment 5.
+<!--
+     <a href="./exercises/assignment6.pdf"></a>Assignment 6</a>,
+  Deadline: March 19, 23:59. You have till March 20, 13:29, to carry out the attack on the server 
+-->
+  </td>
+</tr>
+
+<tr><td>March 20, college 7 </td>
+  <td> Demonstration and discussion of attack on the server (from assignment 5).
+    <a
+      href="slides/assignment5-explanation-presentation.pdf"></a></a> 
+  <a href="slides/hic7.pdf">Root causes</a>
+ </td>
+</tr>
+
+<!--
+<tr><td>March 22, practicum 8 </td> 
+  <td> (Optional) possibility to re-try attacking the server 
+  </td>
+ </tr>
+-->
+
+
+<tr><td>Thursday April 6, 8:30-11:30 </td>
+  <td> exam in HG00.304 and HG00.307 <br>
+         <a href="mock.pdf">voorbeeld tentamen</a> (We don't
+	 provide a sample solution. NB unlike in some earlier
+	 years, we will not ask questions about bash scripts in the exam.)
+    </td>
+</tr>
+
+</TABLE>
+
+<h2>Reference material about C</h2>
+
+Some links that may be useful for the lab sessions:
+
+<ul> <li>Reference material on C and its standard libraries,
+  useful for checking some details, can
+  be found in Eric Huss's <a href="http://www.acm.uiuc.edu/webmonkeys/book/c_guide/">C
+    guide</a> or at <a
+    href="http://en.cppreference.com/w/c">cppreference.com</a>.
+  NB  for the last one, be careful that you don't click through to C++ material!</li>
+
+  <li>The online books <a
+    href="http://en.wikibooks.org/wiki/C_Programming">C Programming</a>
+  and <a href="http://c.learncodethehardway.org/book/">Learn C Code The
+    Hard Way</a>
+  provide more lengthy explanations.
+  </li>
+
+  <li> Finally, the <a href="http://c-faq.com/">C FAQ</a> may 
+  provide the answer to a question you have.
+
+</ul>
+
+<p>
+
+<em>Parts of the course are inspired by on material from the
+<a href="http://www.syssec-project.eu/">SysSec Common Curriculum</a>,
+and the course is part of the
+<a href="http://10kstudents.eu/">10K Students Challenge</a>
+to teach 10 thousand students the basics of 
+software vulnerabilities and secure programming.</em>
+
+<p>
+
+<center>
+<a href="http://xkcd.com/1354/"><img src="xkcd_heartbleed_explanation.png" alt="xkcd cartoon about heartbleed"></a>
+</center>
+
+</html>
