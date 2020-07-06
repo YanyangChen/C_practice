@@ -7,4 +7,7 @@ int main()
  //test2();
  //test3();
  testpointers();
+ testarrayoverrun();
+ pointerillustrate1();
+ pointerillustrate2();
 }

@@ -30,3 +30,39 @@ printf("i is located at %p \n", &i);
 printf("s is located at %p \n", &s);
 printf("y is located at %p \n", &y);
 }
+
+extern void testarrayoverrun(){
+int y = 7;
+int a[2];
+int x = 6;
+printf("oops array over run %i \n", a[2]);
+}
+
+extern void pointerillustrate1(){
+int y = 7;
+int* p = &y; //assign the address of y to p;
+
+printf ("\n\n"	
+"int y = 7;\n"
+"int* p = &y; //assign the address of y to p;\n");
+
+printf ("y = %i \n", y);
+printf ("*p = %i \n", *p);
+}
+
+
+extern void pointerillustrate2(){
+
+int y = 7;
+int* p = &y; //assign the address of y to p;
+int z = *p; //give z the value of what p points to
+printf ("\n \n "	
+"int y = 7 \n "
+"int* p = &y; //assign the address of y to p \n "
+"int z = *p; //give z the value of what p points to \n ");
+
+printf ("y = %i \n", y);
+printf ("*p = %i \n", *p);
+printf ("z = %i \n", z);
+}
+
