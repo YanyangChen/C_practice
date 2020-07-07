@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~erikpoll/hic/code/lecture3</title>
+ </head>
+ <body>
+<h1>Index of /~erikpoll/hic/code/lecture3</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=D">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/~erikpoll/hic/code/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="casting_when_using_pointers_as_arrays">casting_when_using_pointers_as_arrays</a></td><td align="right">2017-01-30 13:23  </td><td align="right">9.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="casting_when_using_pointers_as_arrays.c">casting_when_using_pointers_as_arrays.c</a></td><td align="right">2017-01-30 13:23  </td><td align="right">445 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="overrunning_arrays.c">overrunning_arrays.c</a></td><td align="right">2017-01-30 13:23  </td><td align="right">428 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="pointer_arithmetic_on_array2">pointer_arithmetic_on_array2</a></td><td align="right">2017-01-30 13:23  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="pointer_arithmetic_on_array2.c">pointer_arithmetic_on_array2.c</a></td><td align="right">2017-01-30 13:23  </td><td align="right">385 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="overrunning_arrays">overrunning_arrays</a></td><td align="right">2017-02-06 13:59  </td><td align="right">9.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="stack_overflow">stack_overflow</a></td><td align="right">2017-02-13 21:33  </td><td align="right">9.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="stack_overflow.c">stack_overflow.c</a></td><td align="right">2017-02-13 21:33  </td><td align="right">532 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at cs.ru.nl Port 80</address>
+</body></html>

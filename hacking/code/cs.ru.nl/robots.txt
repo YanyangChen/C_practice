@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /intra/
+Disallow: /~bart/student/
+Disallow: /B.Jacobs/student/
+Disallow: /is/foundations/old-fndswiki-static/

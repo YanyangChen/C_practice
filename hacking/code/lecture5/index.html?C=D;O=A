@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~erikpoll/hic/code/lecture5</title>
+ </head>
+ <body>
+<h1>Index of /~erikpoll/hic/code/lecture5</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=D">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/~erikpoll/hic/code/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2017-03-06 10:23  </td><td align="right">564 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="format_string_attack">format_string_attack</a></td><td align="right">2017-03-06 13:59  </td><td align="right">9.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="format_string_attack.c">format_string_attack.c</a></td><td align="right">2017-03-06 13:59  </td><td align="right">153 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gets_example_slides">gets_example_slides</a></td><td align="right">2017-03-06 11:46  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="gets_example_slides.c">gets_example_slides.c</a></td><td align="right">2017-03-06 11:49  </td><td align="right">205 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="vulnerable_buffer_copy">vulnerable_buffer_copy</a></td><td align="right">2017-03-06 11:38  </td><td align="right">9.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="vulnerable_buffer_copy.c">vulnerable_buffer_copy.c</a></td><td align="right">2017-03-06 11:38  </td><td align="right">421 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="welcome_gets">welcome_gets</a></td><td align="right">2017-03-06 11:11  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="welcome_gets.c">welcome_gets.c</a></td><td align="right">2017-03-06 11:48  </td><td align="right">222 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at cs.ru.nl Port 80</address>
+</body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /~erikpoll/hic/code/lecture4</title>
+ </head>
+ <body>
+<h1>Index of /~erikpoll/hic/code/lecture4</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/~erikpoll/hic/code/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="reading_uninitialised_memory">reading_uninitialised_memory</a></td><td align="right">2017-02-21 16:59  </td><td align="right">9.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="tables">tables</a></td><td align="right">2017-02-20 13:58  </td><td align="right">9.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="allocation_on_stack">allocation_on_stack</a></td><td align="right">2017-02-20 13:22  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="allocation_on_heap">allocation_on_heap</a></td><td align="right">2017-02-20 14:13  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="Makefile">Makefile</a></td><td align="right">2017-02-12 23:13  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="reading_uninitialised_memory.c">reading_uninitialised_memory.c</a></td><td align="right">2017-02-21 16:59  </td><td align="right">815 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="tables.c">tables.c</a></td><td align="right">2017-02-20 13:58  </td><td align="right">504 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="allocation_on_heap.c">allocation_on_heap.c</a></td><td align="right">2017-02-20 14:13  </td><td align="right">433 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="allocation_on_stack.c">allocation_on_stack.c</a></td><td align="right">2017-02-20 13:22  </td><td align="right">356 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="more_stackoverflow/">more_stackoverflow/</a></td><td align="right">2017-02-13 21:33  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at cs.ru.nl Port 80</address>
+</body></html>

@@ -13,10 +13,19 @@ void printd(int n)
 	putchar(n % 10 + '0');
 }
 
+int number =261701;
+
+void recurint(){
+	number--;
+	printf("number is %d \n",number);
+	recurint();
+}
+
 void main(int narg, char* argv[]){
 	char* a = argv[1];
 	int ia;
 	sscanf(argv[1],"%d",&ia);
 	printd(ia);
 	printf("\n\n%s\n%d\n", argv[1], ia);
+        recurint();
 }
