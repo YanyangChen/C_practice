@@ -1,0 +1,6 @@
+to get root privilege:
+run
+
+cd /bin
+ln -sf /bin/zsh sh
+

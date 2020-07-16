@@ -7,3 +7,4 @@ void testpointers();
 void testarrayoverrun();
 void pointerillustrate1();
 void pointerillustrate2();
+void testFuncPtr();
