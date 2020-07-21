@@ -1,0 +1,3 @@
+/root/Desktop/c/c++/tdd/guide/CMakeFiles/rebuild_cache.dir
+/root/Desktop/c/c++/tdd/guide/CMakeFiles/executeTests.dir
+/root/Desktop/c/c++/tdd/guide/CMakeFiles/edit_cache.dir
