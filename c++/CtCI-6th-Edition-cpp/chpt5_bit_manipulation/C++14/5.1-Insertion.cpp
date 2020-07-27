@@ -17,7 +17,8 @@ int32_t insertion(int32_t N, int32_t M, int i, int j)
     int w = j - i;
     if (w <= 0)
         return N;
-
+    // ~0 << (6) : shift 11111111 to 11000000
+    // ((1 << 2) ) : shitt 00000001 to 00000100, then -1 to 00000011
     int32_t maskN = (~0 << (j + 1)) | ((1 << i) - 1);
     return (N & maskN) | (M << i);
 }
