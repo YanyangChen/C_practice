@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/recipe05_example01.dir/recipe05.cpp.o  -o recipe05_example01  -lboost_chrono -lboost_log -lboost_system -lpthread 
