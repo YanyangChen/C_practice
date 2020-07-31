@@ -110,7 +110,7 @@ int main(void)
 #include <iostream>
 #include <stdexcept>
 
-void foo() noexcept(true)
+void foo() noexcept(true) //function not allowed to throw exception, result in std:terminate() being called (because it is not handled).     
 {
     throw std::runtime_error("The answer is: 42");
 }
@@ -141,7 +141,9 @@ int main(void)
 #include <stdexcept>
 
 template<typename T>
-uint64_t foo(T val) noexcept(sizeof(T) <= 4)
+uint64_t foo(T val) noexcept(sizeof(T) <= 4)//not allowed to throw an exception if less or equal to 32 bits
+//allowed situations will not call terminate()
+//uint64_t foo(T val) noexcept(true)//function not allowed to throw exception, result in std:terminate() being called.     
 {
     if constexpr(sizeof(T) <= 4) {
         return static_cast<uint64_t>(val) << 32;

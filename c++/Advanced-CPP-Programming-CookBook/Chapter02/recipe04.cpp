@@ -31,7 +31,7 @@
 class the_answer
 {
 public:
-    ~the_answer()
+    ~the_answer() //noexcept by default, the terminate() triggers b4 being catched
     {
         throw std::runtime_error("42");
     }
@@ -72,7 +72,7 @@ int main(void)
 {
     try {
         the_answer is;
-    }
+    }// destructor is catched, but dangerous, what if other errors are catched first?
     catch (const std::exception &e) {
         std::cout << "The answer is: " << e.what() << '\n';
     }
@@ -101,7 +101,7 @@ int main(void)
 {
     try {
         the_answer is;
-        throw std::runtime_error("first exception");
+        throw std::runtime_error("first exception"); //destructor not triggered, terminate() b4 catch, thus first error also not handled! Even thought noexcept is false, terminate is still called!
     }
     catch (const std::exception &e) {
         std::cout << "The answer is: " << e.what() << '\n';

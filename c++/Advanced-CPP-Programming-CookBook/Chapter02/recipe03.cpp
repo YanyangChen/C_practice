@@ -152,7 +152,7 @@ int main(void)
 template<typename FUNC>
 class finally
 {
-    FUNC m_func;
+    FUNC m_func; //capable of storing lambda function
 
 public:
     finally(FUNC func) :
@@ -169,7 +169,7 @@ int main(void)
 {
     auto execute_on_exit = finally{[]{
         std::cout << "The answer is: 42\n";
-    }};
+    }/*executes here*/};
 }
 
 // The answer is: 42
@@ -208,9 +208,9 @@ int main(void)
         std::cout << "step 1: Collect answers\n";
         throw std::runtime_error("???");
         std::cout << "step 3: Profit\n";
-    }
-    catch (...)
-    { }
+    }// finally{} executes here
+    catch (...)//process any error
+    {std::cout<<"step 3 skipped!\n"; }//catch but do nothing
 }
 
 // step 1: Collect answers

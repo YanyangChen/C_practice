@@ -100,7 +100,7 @@ void foo()
 
 int main(void)
 {
-    foo();
+    foo();//terminated because throwing is not handled
 }
 
 // terminate called after throwing an instance of 'std::runtime_error'

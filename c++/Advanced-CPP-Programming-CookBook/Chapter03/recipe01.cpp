@@ -63,7 +63,10 @@ public:
     }
 
 public:
-
+    //Big 5: define one of them needs to define them all.
+    //default: no implementation needed
+    //purpose: a pointer to this class can be used to delete an instance of any class that derives from it. 
+    //inheritance will leverage runtime polymorphism not composition.
     virtual ~the_answer() = default;
 
     the_answer(the_answer &&) noexcept = default;
@@ -105,7 +108,8 @@ public:
 
     the_answer(the_answer &&) noexcept = default;
     the_answer &operator=(the_answer &&) noexcept = default;
-
+    //copies are explicitly deleted
+    //defines a move-only class, cannot be copied
     the_answer(const the_answer &) = delete;
     the_answer &operator=(const the_answer &) = delete;
 };
@@ -139,7 +143,7 @@ public:
 public:
 
     ~the_answer() = default;
-
+    //contrary to the previous example, this one is a copy-only class
     the_answer(the_answer &&) noexcept = delete;
     the_answer &operator=(the_answer &&) noexcept = delete;
 

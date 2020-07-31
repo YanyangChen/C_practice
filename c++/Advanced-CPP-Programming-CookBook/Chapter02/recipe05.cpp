@@ -60,7 +60,7 @@ int main(void)
 
 class the_answer : public std::exception
 {
-    const char *m_str;
+    const char *m_str;//stored golbally, no allocations are taking place during construction of throwing exceptions. 
 public:
 
     the_answer(const char *str) :

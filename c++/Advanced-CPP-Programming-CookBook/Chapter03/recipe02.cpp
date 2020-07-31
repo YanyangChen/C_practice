@@ -113,7 +113,7 @@ int main(void)
     std::cout << '\n';
 
     {
-        the_answer is;
+        the_answer is{23};
         the_answer is_42{42};
         is = std::move(is_42);
     }

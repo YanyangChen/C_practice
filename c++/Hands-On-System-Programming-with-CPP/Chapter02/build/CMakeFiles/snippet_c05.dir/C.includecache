@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/scratchpad.c
+stdio.h
+-
+stdio.h
+-
+stdio.h
+-
+

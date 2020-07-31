@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/snippet_c06.dir/scratchpad.c.o  -o snippet_c06 

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/snippet_cpp04.dir/scratchpad.cpp.o  -o snippet_cpp04 

@@ -1,0 +1,15 @@
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_cpp06.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/edit_cache.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_cpp05.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c01.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c05.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c04.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c03.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c02.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_cpp03.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c06.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_cpp04.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_c07.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_cpp01.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/rebuild_cache.dir
+/root/Desktop/c/c++/Hands-On-System-Programming-with-CPP/Chapter02/build/CMakeFiles/snippet_cpp02.dir
