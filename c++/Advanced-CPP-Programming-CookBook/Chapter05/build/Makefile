@@ -163,6 +163,19 @@ recipe05_examples/fast:
 .PHONY : recipe05_examples/fast
 
 #=============================================================================
+# Target rules for targets named recipe04_example02
+
+# Build rule for target.
+recipe04_example02: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 recipe04_example02
+.PHONY : recipe04_example02
+
+# fast build rule for target.
+recipe04_example02/fast:
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/build
+.PHONY : recipe04_example02/fast
+
+#=============================================================================
 # Target rules for targets named recipe04_example01
 
 # Build rule for target.
@@ -546,6 +559,7 @@ recipe04.o: recipe04.cpp.o
 
 # target to build an object file
 recipe04.cpp.o:
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/recipe04.cpp.o
 	$(MAKE) -f CMakeFiles/recipe04_example01.dir/build.make CMakeFiles/recipe04_example01.dir/recipe04.cpp.o
 .PHONY : recipe04.cpp.o
 
@@ -555,6 +569,7 @@ recipe04.i: recipe04.cpp.i
 
 # target to preprocess a source file
 recipe04.cpp.i:
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/recipe04.cpp.i
 	$(MAKE) -f CMakeFiles/recipe04_example01.dir/build.make CMakeFiles/recipe04_example01.dir/recipe04.cpp.i
 .PHONY : recipe04.cpp.i
 
@@ -564,6 +579,7 @@ recipe04.s: recipe04.cpp.s
 
 # target to generate assembly for a file
 recipe04.cpp.s:
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/recipe04.cpp.s
 	$(MAKE) -f CMakeFiles/recipe04_example01.dir/build.make CMakeFiles/recipe04_example01.dir/recipe04.cpp.s
 .PHONY : recipe04.cpp.s
 
@@ -669,6 +685,7 @@ help:
 	@echo "... recipe07_examples"
 	@echo "... recipe06_examples"
 	@echo "... recipe05_examples"
+	@echo "... recipe04_example02"
 	@echo "... recipe04_example01"
 	@echo "... recipe04_examples"
 	@echo "... recipe07_example01"

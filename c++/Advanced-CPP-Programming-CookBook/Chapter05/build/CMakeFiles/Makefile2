@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter
 
 # The main recursive "all" target.
 all: CMakeFiles/recipe07_example02.dir/all
+all: CMakeFiles/recipe04_example02.dir/all
 all: CMakeFiles/recipe04_example01.dir/all
 all: CMakeFiles/recipe07_example01.dir/all
 all: CMakeFiles/recipe06_example03.dir/all
@@ -84,6 +85,7 @@ clean: CMakeFiles/recipe07_example02.dir/clean
 clean: CMakeFiles/recipe07_examples.dir/clean
 clean: CMakeFiles/recipe06_examples.dir/clean
 clean: CMakeFiles/recipe05_examples.dir/clean
+clean: CMakeFiles/recipe04_example02.dir/clean
 clean: CMakeFiles/recipe04_example01.dir/clean
 clean: CMakeFiles/recipe04_examples.dir/clean
 clean: CMakeFiles/recipe07_example01.dir/clean
@@ -115,7 +117,7 @@ clean: CMakeFiles/recipe02_examples.dir/clean
 CMakeFiles/recipe07_example02.dir/all:
 	$(MAKE) -f CMakeFiles/recipe07_example02.dir/build.make CMakeFiles/recipe07_example02.dir/depend
 	$(MAKE) -f CMakeFiles/recipe07_example02.dir/build.make CMakeFiles/recipe07_example02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=35,36 "Built target recipe07_example02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=37,38 "Built target recipe07_example02"
 .PHONY : CMakeFiles/recipe07_example02.dir/all
 
 # Build rule for subdir invocation for target.
@@ -168,8 +170,8 @@ CMakeFiles/recipe07_examples.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/recipe06_examples.dir/all: CMakeFiles/recipe06_example03.dir/all
-CMakeFiles/recipe06_examples.dir/all: CMakeFiles/recipe06_example01.dir/all
 CMakeFiles/recipe06_examples.dir/all: CMakeFiles/recipe06_example02.dir/all
+CMakeFiles/recipe06_examples.dir/all: CMakeFiles/recipe06_example01.dir/all
 	$(MAKE) -f CMakeFiles/recipe06_examples.dir/build.make CMakeFiles/recipe06_examples.dir/depend
 	$(MAKE) -f CMakeFiles/recipe06_examples.dir/build.make CMakeFiles/recipe06_examples.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num= "Built target recipe06_examples"
@@ -220,6 +222,33 @@ CMakeFiles/recipe05_examples.dir/clean:
 .PHONY : CMakeFiles/recipe05_examples.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/recipe04_example02.dir
+
+# All Build rule for target.
+CMakeFiles/recipe04_example02.dir/all:
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/depend
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=25,26 "Built target recipe04_example02"
+.PHONY : CMakeFiles/recipe04_example02.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/recipe04_example02.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/recipe04_example02.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles 0
+.PHONY : CMakeFiles/recipe04_example02.dir/rule
+
+# Convenience name for target.
+recipe04_example02: CMakeFiles/recipe04_example02.dir/rule
+
+.PHONY : recipe04_example02
+
+# clean rule for target.
+CMakeFiles/recipe04_example02.dir/clean:
+	$(MAKE) -f CMakeFiles/recipe04_example02.dir/build.make CMakeFiles/recipe04_example02.dir/clean
+.PHONY : CMakeFiles/recipe04_example02.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/recipe04_example01.dir
 
 # All Build rule for target.
@@ -250,6 +279,7 @@ CMakeFiles/recipe04_example01.dir/clean:
 # Target rules for target CMakeFiles/recipe04_examples.dir
 
 # All Build rule for target.
+CMakeFiles/recipe04_examples.dir/all: CMakeFiles/recipe04_example02.dir/all
 CMakeFiles/recipe04_examples.dir/all: CMakeFiles/recipe04_example01.dir/all
 	$(MAKE) -f CMakeFiles/recipe04_examples.dir/build.make CMakeFiles/recipe04_examples.dir/depend
 	$(MAKE) -f CMakeFiles/recipe04_examples.dir/build.make CMakeFiles/recipe04_examples.dir/build
@@ -258,7 +288,7 @@ CMakeFiles/recipe04_examples.dir/all: CMakeFiles/recipe04_example01.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/recipe04_examples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/recipe04_examples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles 0
 .PHONY : CMakeFiles/recipe04_examples.dir/rule
@@ -280,7 +310,7 @@ CMakeFiles/recipe04_examples.dir/clean:
 CMakeFiles/recipe07_example01.dir/all:
 	$(MAKE) -f CMakeFiles/recipe07_example01.dir/build.make CMakeFiles/recipe07_example01.dir/depend
 	$(MAKE) -f CMakeFiles/recipe07_example01.dir/build.make CMakeFiles/recipe07_example01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=33,34 "Built target recipe07_example01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=35,36 "Built target recipe07_example01"
 .PHONY : CMakeFiles/recipe07_example01.dir/all
 
 # Build rule for subdir invocation for target.
@@ -307,7 +337,7 @@ CMakeFiles/recipe07_example01.dir/clean:
 CMakeFiles/recipe06_example03.dir/all:
 	$(MAKE) -f CMakeFiles/recipe06_example03.dir/build.make CMakeFiles/recipe06_example03.dir/depend
 	$(MAKE) -f CMakeFiles/recipe06_example03.dir/build.make CMakeFiles/recipe06_example03.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=31,32 "Built target recipe06_example03"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=33,34 "Built target recipe06_example03"
 .PHONY : CMakeFiles/recipe06_example03.dir/all
 
 # Build rule for subdir invocation for target.
@@ -331,14 +361,14 @@ CMakeFiles/recipe06_example03.dir/clean:
 # Target rules for target CMakeFiles/recipe01_examples.dir
 
 # All Build rule for target.
+CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example01.dir/all
+CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example08.dir/all
+CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example02.dir/all
 CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example03.dir/all
 CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example04.dir/all
 CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example05.dir/all
 CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example07.dir/all
 CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example06.dir/all
-CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example01.dir/all
-CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example08.dir/all
-CMakeFiles/recipe01_examples.dir/all: CMakeFiles/recipe01_example02.dir/all
 	$(MAKE) -f CMakeFiles/recipe01_examples.dir/build.make CMakeFiles/recipe01_examples.dir/depend
 	$(MAKE) -f CMakeFiles/recipe01_examples.dir/build.make CMakeFiles/recipe01_examples.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num= "Built target recipe01_examples"
@@ -423,7 +453,7 @@ CMakeFiles/recipe01_example01.dir/clean:
 CMakeFiles/recipe06_example02.dir/all:
 	$(MAKE) -f CMakeFiles/recipe06_example02.dir/build.make CMakeFiles/recipe06_example02.dir/depend
 	$(MAKE) -f CMakeFiles/recipe06_example02.dir/build.make CMakeFiles/recipe06_example02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=29,30 "Built target recipe06_example02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=31,32 "Built target recipe06_example02"
 .PHONY : CMakeFiles/recipe06_example02.dir/all
 
 # Build rule for subdir invocation for target.
@@ -558,7 +588,7 @@ CMakeFiles/recipe03_example01.dir/clean:
 CMakeFiles/recipe06_example01.dir/all:
 	$(MAKE) -f CMakeFiles/recipe06_example01.dir/build.make CMakeFiles/recipe06_example01.dir/depend
 	$(MAKE) -f CMakeFiles/recipe06_example01.dir/build.make CMakeFiles/recipe06_example01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=27,28 "Built target recipe06_example01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=29,30 "Built target recipe06_example01"
 .PHONY : CMakeFiles/recipe06_example01.dir/all
 
 # Build rule for subdir invocation for target.
@@ -747,7 +777,7 @@ CMakeFiles/recipe02_example01.dir/clean:
 CMakeFiles/recipe05_example01.dir/all:
 	$(MAKE) -f CMakeFiles/recipe05_example01.dir/build.make CMakeFiles/recipe05_example01.dir/depend
 	$(MAKE) -f CMakeFiles/recipe05_example01.dir/build.make CMakeFiles/recipe05_example01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=25,26 "Built target recipe05_example01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/build/CMakeFiles --progress-num=27,28 "Built target recipe05_example01"
 .PHONY : CMakeFiles/recipe05_example01.dir/all
 
 # Build rule for subdir invocation for target.
