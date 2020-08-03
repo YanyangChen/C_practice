@@ -25,6 +25,7 @@
 #include <mutex>
 #include <stack>
 #include <iostream>
+#include <thread>
 
 template<typename T>
 class my_stack
@@ -38,12 +39,18 @@ public:
     void push(ARG &&arg)
     {
         std::lock_guard lock(m);
+	std::cout << std::forward<ARG>(arg) << "\n" << static_cast<void*>(this) << "\n";
         m_stack.push(std::forward<ARG>(arg));
     }
 
+    void pushint(int i){
+    push(i);
+    }
+    
     void pop()
     {
         std::lock_guard lock(m);
+	std::cout << "cout top " << m_stack.top() << "\n"; 
         m_stack.pop();
     }
 
@@ -58,14 +65,19 @@ int main(void)
 {
     my_stack<int> s;
 
+//    std::thread t1(&my_stack<int>::pushint, s, 4);
+//    std::thread t2(&my_stack<int>::pushint, s, 8);
+//    std::thread t3(&my_stack<int>::pushint, s, 15);
     s.push(4);
     s.push(8);
     s.push(15);
-    s.push(16);
+   s.push(16);
     s.push(23);
     s.push(42);
-
-    while(s.empty()) {
+    //t1.join();
+    //t2.join();
+    //t3.join();
+    while(!s.empty()) {
         s.pop();
     }
 

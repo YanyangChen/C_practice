@@ -96,7 +96,8 @@ int main(void)
 class the_answer
 {
     mutable std::mutex m{};
-
+    //tells the compiler that the member is allowed to be modified, even when the object is passed asa constant 
+    //refernce or when the object defines a constant function.
 public:
     void print() const
     {

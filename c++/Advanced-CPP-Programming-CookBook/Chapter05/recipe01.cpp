@@ -81,10 +81,22 @@ void foo()
     }
 }
 
+void foo2()
+{
+    static std::string msg{"The answer is: 84\n"};
+    while(true) {
+        m.lock();
+        for (const auto &c : msg) {
+            std::clog << c;
+        }
+        m.unlock();
+    }
+}
+
 int main(void)
 {
     std::thread t1{foo};
-    std::thread t2{foo};
+    std::thread t2{foo2};
 
     t1.join();
     t2.join();
@@ -257,8 +269,12 @@ void reader()
     while(true) {
         std::shared_lock lock(m);
         if (count_ro >= 42) {
+		std::cout << count_ro << "\n";}
+	else{
+		std::cout << "else" << count_ro << "\n";
+	}
             return;
-        }
+	    //std::shared_lock unlock(m);
     }
 }
 
@@ -269,6 +285,7 @@ void writer()
         if (++count_rw == 100) {
             return;
         }
+	//std::unique_lock unlock(m);
     }
 }
 
@@ -277,13 +294,13 @@ int main(void)
     std::thread t1{reader};
     std::thread t2{reader};
     std::thread t3{reader};
-    std::thread t4{reader};
+    //std::thread t4{reader};
     std::thread t5{writer};
 
     t1.join();
     t2.join();
     t3.join();
-    t4.join();
+    //t4.join();
     t5.join();
 
     return 0;
@@ -316,9 +333,10 @@ int main(void)
 {
     std::thread t1{foo};
     std::thread t2{foo};
-
+    std::thread t3{foo};
     t1.join();
     t2.join();
+    t3.join();
 
     return 0;
 }

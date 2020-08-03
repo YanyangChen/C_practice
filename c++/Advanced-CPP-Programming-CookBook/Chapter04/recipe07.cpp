@@ -60,7 +60,9 @@ int main(void)
 int main(void)
 {
     the_answer is{42};
+    the_answer another{21};
     is.print();
+    another.print();
 
     return 0;
 }

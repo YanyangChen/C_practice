@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter05/recipe06.cpp
+vector
+-
+iostream
+-
+algorithm
+-
+future
+-
+thread
+-
+vector
+-
+iostream
+-
+algorithm
+-
+future
+-
+thread
+-
+vector
+-
+iostream
+-
+algorithm
+-
+

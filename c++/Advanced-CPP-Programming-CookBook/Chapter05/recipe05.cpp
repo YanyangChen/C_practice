@@ -39,12 +39,14 @@ template<typename S>
 void pop(S &s)
 {
     std::lock_guard lock(m);
+    std::cout << s.top() << "\n";
     s.pop();
 }
 
 template<typename S>
 auto empty(S &s)
 {
+
     std::lock_guard lock(m);
     return s.empty();
 }
@@ -60,7 +62,7 @@ int main(void)
     push(mystack, 23);
     push(mystack, 42);
 
-    while(empty(mystack)) {
+    while(!empty(mystack)) {
         pop(mystack);
     }
 
