@@ -61,12 +61,12 @@ template<typename... Args>
 void foo(Args &&...args)
 {
     std::tuple t(std::forward<Args>(args)...);
-    std::cout << std::get<0>(t) << std::get<1>(t) << '\n';
+    std::cout << std::get<0>(t) << std::get<1>(t) << std::get<2>(t) <<'\n';
 }
 
 int main(void)
 {
-    foo("The answer is: ", 42);
+    foo("The answer is: ", 507, " testing");
     return 0;
 }
 
@@ -95,7 +95,7 @@ int main(void)
 
 // -----------------------------------------------------------------------------
 #ifdef EXAMPLE05
-
+//loop through and output each input of a function(variadic function parameters)
 #include <tuple>
 #include <iostream>
 
@@ -124,7 +124,7 @@ void foo(Args &&...args)
 
 int main(void)
 {
-    foo("The answer is: ", 42);
+    foo("The answer is: ", 1,2,3,4,5,6);
     std::cout << '\n';
 
     return 0;

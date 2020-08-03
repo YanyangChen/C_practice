@@ -60,10 +60,12 @@ int main(void)
     the_answer_can_throw is2;
 
     std::cout << "noexcept: ";
-    auto is3 = std::move_if_noexcept(is1);
+    auto is3 = std::move_if_noexcept(is1);//this function will cast to right value if it cannot throw exception.
 
     std::cout << "can throw: ";
-    auto is4  = std::move_if_noexcept(is2);
+    auto is4  = std::move_if_noexcept(is2);//otherwise it will be casted to left value
+    // if the value can be thrown, it is possible that the copy process will be stoped during the process, which is 
+    // not safe, thus it's better be copied to a left value first.
 
     return 0;
 }
@@ -95,7 +97,7 @@ public:
         noexcept(std::is_nothrow_move_constructible_v<T>)
     {
         auto tmp = std::make_unique<T[]>(size);
-
+	//this loop command will judge each move is l value or right value and move.
         for (size_type i = 0; i < m_size; i++) {
             tmp[i] = std::move_if_noexcept(m_buffer[i]);
         }
@@ -109,7 +111,7 @@ private:
     std::unique_ptr<T[]> m_buffer{};
 };
 
-struct suboptimal
+struct suboptimal //can throw
 {
     suboptimal() = default;
 
@@ -136,7 +138,7 @@ struct suboptimal
     }
 };
 
-struct optimal
+struct optimal //cannot throw
 {
     optimal() = default;
 

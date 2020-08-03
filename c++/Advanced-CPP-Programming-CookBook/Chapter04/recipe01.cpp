@@ -151,13 +151,17 @@ void the_answer(T is)
     std::cout << "The answer is: " << is << '\n';
 }
 
-template<
-    typename T,
-    std::enable_if_t<std::is_floating_point_v<T>>* = nullptr
-    >
-void the_answer(T is)
+//template<
+//    typename T,
+//    std::enable_if_t<std::is_floating_point_v<T>>* = nullptr
+//    >
+//void 
+
+template<typename T>
+std::enable_if_t<std::is_floating_point_v<T>>
+the_answer(T is)
 {
-    std::cout << std::setprecision(10);
+    std::cout << std::setprecision(3);
     std::cout << "The answer is: " << is << '\n';
 }
 

@@ -188,7 +188,7 @@ T add(T a, T b)
 
 int main(void)
 {
-    std::cout << "The answer is: " << add(41, 1) << '\n';
+    std::cout << "The answer is: " << add(41.5, 1.5) << '\n';
     return 0;
 }
 

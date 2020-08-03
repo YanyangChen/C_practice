@@ -54,7 +54,7 @@ void foo()
 int main(void)
 {
     foo<42>();
-    foo<42U>();
+    foo<123>();
     return 0;
 }
 
