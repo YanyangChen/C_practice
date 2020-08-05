@@ -394,7 +394,7 @@ int main(void)
     c.push_back(8);
     c.emplace_back(23);
     c.push_back(std::move(16));
-
+    //for(std::vector<int>::const_iterator i=c.m_v.begin(); i != c.m_v.end(); ++i) std::cout << *i << ' ';
     return 0;
 }
 

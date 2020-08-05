@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+dd3d4ad3bfb5d1b44c3c45b0df393c95 CMakeFiles/hayai
+a3b33a260921308e8669cc50effbab13 CMakeFiles/hayai-complete
+02c620f3ee783fac9411d665a99acf12 hayai-prefix/src/hayai-stamp/hayai-build
+fec87310c387f2a92d92b73c33a0c8ff hayai-prefix/src/hayai-stamp/hayai-configure
+0a8bdfb97319479319c65709ef47b195 hayai-prefix/src/hayai-stamp/hayai-download
+04e175cac8c1efc3c6a67c96454b4d6e hayai-prefix/src/hayai-stamp/hayai-install
+0e47c5a50de5e941b20d2de9a72df624 hayai-prefix/src/hayai-stamp/hayai-mkdir
+ebf1e1288b5d20b0c713384bea942b85 hayai-prefix/src/hayai-stamp/hayai-patch
+ebafb75d6bf618fea59830a7abe9bd6a hayai-prefix/src/hayai-stamp/hayai-update

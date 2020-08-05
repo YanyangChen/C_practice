@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhayai_main.a  CMakeFiles/hayai_main.dir/hayai_posix_main.o
+/usr/bin/ranlib libhayai_main.a

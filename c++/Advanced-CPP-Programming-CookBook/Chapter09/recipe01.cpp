@@ -59,7 +59,7 @@ int main(void)
     };
 
     for (const auto &h : heros) {
-        std::cout << h->attack(0, 42) << '\n';
+        std::cout << h->attack(0, 0) << '\n';
     }
 
     return 0;

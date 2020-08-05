@@ -1,0 +1,13 @@
+# Target labels
+ hayai
+# Source files and their labels
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/CMakeFiles/hayai
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/CMakeFiles/hayai.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/CMakeFiles/hayai-complete.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-install.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-mkdir.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-download.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-update.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-patch.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-configure.rule
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-build.rule

@@ -1,0 +1,1 @@
+/usr/bin/c++     -rdynamic CMakeFiles/tests.dir/hayai_test_parameter_descriptor.o  -o tests  ../vendor/gtest/libgtest_main.a -lrt ../vendor/gtest/libgtest.a -lpthread 

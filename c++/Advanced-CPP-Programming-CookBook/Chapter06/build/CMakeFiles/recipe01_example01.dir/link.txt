@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/recipe01_example01.dir/recipe01.cpp.o  -o recipe01_example01  -lpthread external/lib/libhayai_main.a 

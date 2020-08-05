@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/CMakeFiles/hayai"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/CMakeFiles/hayai.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/CMakeFiles/hayai-complete.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-install.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-mkdir.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-download.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-update.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-patch.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-configure.rule"
+		},
+		{
+			"file" : "/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter06/build/hayai-prefix/src/hayai-stamp/hayai-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"hayai"
+		],
+		"name" : "hayai"
+	}
+}

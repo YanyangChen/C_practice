@@ -40,7 +40,7 @@ public:
     template<typename ARG>
     void push(ARG &&arg)
     {
-        std::lock_guard lock(m);
+        //std::lock_guard lock(m);
 	sum += std::forward<ARG>(arg);
 	std::cout << std::forward<ARG>(arg) << "\n" << static_cast<void*>(this) << "\n";
 
@@ -113,7 +113,7 @@ public:
     template<typename ARG>
     void push(ARG &&arg)
     {
-        std::lock_guard lock(m);
+        //std::lock_guard lock(m);
 	sum += std::forward<ARG>(arg);
 	std::cout << std::forward<ARG>(arg) << "\n" << static_cast<void*>(this) << "\n";
 

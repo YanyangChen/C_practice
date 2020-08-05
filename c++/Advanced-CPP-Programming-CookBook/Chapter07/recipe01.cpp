@@ -374,6 +374,9 @@ public:
     bool passed{};
 };
 
+//mock_file f;
+//f.write("The answer is not: 43\n"); //this won't work since it is marked virtual
+
 TEST_CASE("the answer")
 {
     mock_file f;
