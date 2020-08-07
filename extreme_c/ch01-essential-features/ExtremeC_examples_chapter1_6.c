@@ -2,7 +2,7 @@
 // Description: Example 1.6
 
 #include <stdio.h>
-
+//#X wraps X with "" and loop_1,2,3 cut the first parameter(and wrap it) with the rest parameters.
 #define LOOP_3(X, ...) \
   printf("%s\n", #X);
 
@@ -19,7 +19,7 @@
 
 int main(int argc, char** argv) {
 
-  LOOP(copy paste cut)
+  LOOP(copy paste cut select)
   LOOP(copy, paste, cut)
   LOOP(copy, paste, cut, select)
 
