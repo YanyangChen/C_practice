@@ -79,7 +79,9 @@ template<typename T>
 class base
 {
 public:
-    void foo()
+    void foo()//the use of template parameter removes the need for foo function.
+	    //which reduces the need of vTable and improves performance.
+	    //static polymorphism can remove the need for virtual.
     { static_cast<T *>(this)->foo(); }
 
     void common()

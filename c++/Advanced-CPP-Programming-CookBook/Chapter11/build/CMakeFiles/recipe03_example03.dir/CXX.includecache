@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter11/recipe03.cpp
+iostream
+-
+memory
+-
+iostream
+-
+memory
+-
+iostream
+-
+memory
+-
+iostream
+-
+

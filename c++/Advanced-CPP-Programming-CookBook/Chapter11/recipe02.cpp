@@ -128,7 +128,7 @@ int main(void)
 #ifdef EXAMPLE03
 
 #include <iostream>
-
+//assign a memory pool
 uint8_t memory[0x1000] = {};
 
 class mm
@@ -140,13 +140,13 @@ public:
 
     template<typename T>
     T *allocate()
-    {
+    {//allocate memory from this memory pool
         if (cursor + sizeof(T) > memory + 0x1000) {
             throw std::bad_alloc();
         }
 
         auto ptr = new (cursor) T;
-        cursor += sizeof(T);
+        cursor += sizeof(T);//update cursor to point current pool location
 
         return ptr;
     }

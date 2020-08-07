@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/Desktop/c/c++/Advanced-CPP-Programming-CookBook/Chapter10/recipe02.cpp
+array
+-
+atomic
+-
+thread
+-
+iostream
+-
+

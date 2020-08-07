@@ -92,7 +92,7 @@ int main(void)
 #include <iostream>
 
 std::atomic<int> count;
-
+//demonstratet how to pass a pointer using std::unique_ptr
 void inc(int *val)
 {
     count += *val;
@@ -141,7 +141,7 @@ int main(void)
 
     {
         auto ptr = std::make_unique<int>(1);
-
+	//std::unique_ptr created in its own scope, released before the threads are required to complete.
         for (auto &thread : threads) {
             thread = std::thread{inc, ptr.get()};
         }

@@ -249,7 +249,7 @@ class know_it_all
 {
     std::function<answer(std::string str)> m_factory;
 
-public:
+public://default to anwser class, but provide the ability to chosse another factory.
     know_it_all(answer(*f)(std::string str) = answer::make_answer) :
         m_factory{f}
     { }
