@@ -3,10 +3,10 @@
 
 #include <stdio.h>
 
-void func(int* a) {
+void func(int* a) {//it's usually recommanded to use pointers as arguments, 8 bytes(x64 machine, 4 bytes in x86 machine) of a pointer argument is much more efficient than copoying hundreds of bytes of an object.
   int b = 9;
-  *a = 5;
-  a = &b;
+  *a = 5;// changeing pointer (parameter) 's value is allowed by dereferencing the pointer.
+  a = &b;//but the pointer's location is never changed, this line of code affects nothing.
 }
 
 int main(int argc, char** argv) {

@@ -5,7 +5,9 @@
 #include <stdlib.h>
 
 int* create_an_integer(int default_value) {
-  int* var_ptr = (int*)malloc(sizeof(int));
+  int* var_ptr = (int*)malloc(sizeof(int));//assign a chunk of memory in heap memory, so it can pass
+  //value in the pointer even when the scope is end(lifetime not limited to the declating function.). 
+  //its life ends with free() fcuntion.
   *var_ptr = default_value;
   return var_ptr;
 }

@@ -8,7 +8,7 @@ int main(int argc, char** argv) {
  int* ptr = &var;
  void* gptr = ptr;
  
- printf("%d\n", *gptr);
+ printf("%d\n", *gptr);//void pointer(generic pointer cannot be compiled)
  
  return 0;
 }

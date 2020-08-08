@@ -1,7 +1,7 @@
 // File name: ExtremeC_exampels_chapter1_2.c
 // Description: Example 1.2
 
-#define ADD(a, b) a + b
+#define ADD(a, b) a + b //macro can be used to define a function but not suggested if it can be written in C
 
 int main(int argc, char** argv) {
   int x = 2;

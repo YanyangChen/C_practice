@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 #include <string.h>
-
+// ## : concat;
+//  # : wrapping with "";
 #define CMD(NAME) \
   char NAME ## _cmd[256]  = ""; \
   strcpy(NAME ## _cmd, #NAME);

@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 int* create_an_integer(int default_value) {
-  int var = default_value;
-  return &var;
+  int var = default_value;//assign value in a stack memory
+  return &var;//at the time this pointer is out of scope it lost its value.
 }
 
 int main() {

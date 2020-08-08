@@ -13,9 +13,11 @@ int main(int argc, char** argv) {
  arr[3] = 23;
  arr[4] = 18;
  
- int* ptr = &arr[0];
+ //int* ptr = &arr[0]; //in C, an array is actually a pointer that points to its first element,
+ // we could write :
+ int * ptr = arr; //instead of int* ptr = &arr[0];
  
- for (;;) {
+ for (;;) {//infinite loop
    printf("%d\n", *ptr);
    if (ptr == &arr[SIZE - 1]) {
      break;
