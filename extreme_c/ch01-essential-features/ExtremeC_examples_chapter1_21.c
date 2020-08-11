@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 
-struct sample_t {
+//struct  sample_t {
+struct __attribute__((__packed__)) sample_t {
   char first;
   char second;
   char third;

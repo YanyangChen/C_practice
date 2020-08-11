@@ -3,8 +3,15 @@
 
 #include <stdio.h>
 
+//typedef: define an alias for an already defined type.
+
+//define bool_t as an alias for int type
 typedef int bool_t;
+
+//define less_than_func_t as an alias for function pointer type boolt(*)(int,int)
 typedef bool_t (*less_than_func_t)(int, int);
+
+//in C, name of a new type usually end with _t by convention.
 
 bool_t less_than(int a, int b) {
   return a < b ? 1 : 0;
