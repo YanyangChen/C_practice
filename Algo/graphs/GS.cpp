@@ -16,13 +16,15 @@ class Graph
     list<int> *adj; 
     vector<int> *ancestors;
     // A recursive function used by DFS 
-    void DFSUtil(int v, bool visited[]); 
+    void DFSUtil(int v, bool visited[]);
+    bool isCyclicUtil(int v, bool visited[], int parent); 
 public: 
     Graph(int V);   // Constructor 
   
     Graph(int V, bool Directional); 
     // function to add an edge to graph 
-    void addEdge(int v, int w); 
+    void addEdge(int v, int w);
+    bool isCyclic();   // returns true if there is a cycle 
   
     // DFS traversal of the vertices 
     // reachable from v 
@@ -75,7 +77,7 @@ void Graph::DFSUtil(int v, bool visited[])
     for (i = adj[v].begin(); i != adj[v].end(); ++i)
       
       if (!visited[*i]){
-	/*********************looking for cercle*********************/
+	/*********************looking for cercle********************
 	ancestors[*i].push_back(v);
 	if(!ancestors[v].empty()){
 	  //copy(ancestors[v].begin(), ancestors[v].end(), back_inserter(ancestors[*i]));
@@ -93,7 +95,7 @@ void Graph::DFSUtil(int v, bool visited[])
 
 	
 	std::cout <<"end";
-	/*********************looking for cercle*********************/
+	********************looking for cercle*********************/
 	  DFSUtil(*i, visited);} 
 } 
   
