@@ -76,14 +76,16 @@ bool Graph::isCyclicUtil(int v, bool visited[], int parent)
         // If an adjacent is not visited, then recur for that adjacent 
         if (!visited[*i]) 
         { 
-           if (isCyclicUtil(*i, visited, v)) 
-              return true; 
+           if (isCyclicUtil(*i, visited, v)){ 
+		cout << " - " << v;
+              return true; }
         } 
   
         // If an adjacent is visited and not parent of current vertex, 
         // then there is a cycle. 
-        else if (*i != parent) 
-           return true; 
+        else if (*i != parent) {
+	      cout << "circle connects in " << *i << " - " << v;
+           return true; }
     } 
     return false; 
 } 
@@ -101,8 +103,9 @@ bool Graph::isCyclic()
     for (int u = 0; u < V; u++) 
         if (!visited[u]) // Don't recur for u if it is already visited 
           if (isCyclicUtil(u, visited, -1)) 
+	{   // cout << "and  " << u;
              return true; 
-  
+	}
     return false; 
 }
 
@@ -216,14 +219,14 @@ int main(int argc, char *argv[])
     g.addEdge(0, 8); 
     //g.addEdge(8, 0); 
     g.addEdge(8, 9); 
+    //g.addEdge(6, 0); 
     g.addEdge(6, 0); 
-    g.addEdge(6, 4); 
     
     //g.addEdge(3, 3); 
   
     cout << " DFS";
     g.DFS(0);
-    g1.isCyclic()? cout << "Graph contains cycle\n": 
+    g.isCyclic()? cout << "Graph contains cycle\n": 
                    cout << "Graph doesn't contain cycle\n";
     cout << "\n";
     cout << " BFS";  
