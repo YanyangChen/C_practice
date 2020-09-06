@@ -62,7 +62,7 @@ Node* BSTInsert(Node* root, Node *pt)
         root->left->parent = root; 
     } 
     else if (pt->data > root->data) 
-    { 
+      { 
         root->right = BSTInsert(root->right, pt); 
         root->right->parent = root; 
     } 
@@ -162,15 +162,15 @@ void RBTree::fixViolation(Node *&root, Node *&pt)
   
             Node *uncle_pt = grand_parent_pt->right; 
   
-            /* Case : 1 
+            /* Case : 1 // only 4 nodes on the tree
                The uncle of pt is also red 
                Only Recoloring required */
             if (uncle_pt != NULL && uncle_pt->color == RED) 
             { 
-                grand_parent_pt->color = RED; 
-                parent_pt->color = BLACK; 
+   	        grand_parent_pt->color = RED; // color root to be red
+                parent_pt->color = BLACK;//color parent and uncle to be black 
                 uncle_pt->color = BLACK; 
-                pt = grand_parent_pt; 
+                pt = grand_parent_pt;// make the point as tree's root 
             } 
   
             else
@@ -255,7 +255,10 @@ void RBTree::levelOrder()  {  levelOrderHelper(root); }
 int main() 
 { 
     RBTree tree; 
-  
+    tree.insert(11); 
+    tree.insert(10); 
+    tree.insert(9); 
+    tree.insert(8); 
     tree.insert(7); 
     tree.insert(6); 
     tree.insert(5); 
